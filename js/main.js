@@ -36,3 +36,16 @@
 //     console.log(`${quarterValue} чверть ${hoursValue} години `);
 //   }
 // }
+
+function descendingOrder(n) {
+  const arr = Array.from(String(n));
+
+  return arr
+    .sort((a, b) => b - a)
+    .map(x => parseInt(x))
+    .reduce(function (accum, digit) {
+      console.log(digit);
+      return accum * 10 + digit;
+    }, 0);
+}
+descendingOrder(123);
