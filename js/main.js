@@ -37,15 +37,27 @@
 //   }
 // }
 
-function descendingOrder(n) {
-  const arr = Array.from(String(n));
+// function descendingOrder(n) {
+//   const arr = Array.from(String(n));
 
-  return arr
-    .sort((a, b) => b - a)
-    .map(x => parseInt(x))
-    .reduce(function (accum, digit) {
-      console.log(digit);
-      return accum * 10 + digit;
-    }, 0);
-}
-descendingOrder(123);
+//   return arr
+//     .sort((a, b) => b - a)
+//     .map(x => parseInt(x))
+//     .reduce(function (accum, digit) {
+//       console.log(digit);
+//       return accum * 10 + digit;
+//     }, 0);
+// }
+// descendingOrder(123);
+
+// function capitals(word) {
+//   const indexArr = [];
+
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === word[i].toUpperCase()) {
+//       indexArr.push(i);
+//       // console.log();
+//     }
+//   }
+//   return indexArr;
+// }
