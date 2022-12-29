@@ -113,3 +113,32 @@
 // }
 
 // console.log(getSum(0, -3));
+
+
+// function arrayDiff(a, b) {
+//   const arr = [];
+//   for (let i = 0; i < a.length; i++) {
+//     if (b.indexOf(a[i]) === -1) {
+//       arr.push(a[i]);
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(arrayDiff([], [1, 2]));
+
+// function arrayDiff(a, b) {
+//   if (b.length == 0 || a.length == 0) return a;
+//   for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < b.length; j++) {
+//       if (a[i] == b[j]) {
+//         a.splice(i, 1);
+//         console.log(a[i]);
+//         i--;
+//       }
+//     }
+//   }
+//   return a;
+// }
+
+// arrayDiff([1, 2], [1]);
