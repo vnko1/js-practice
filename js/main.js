@@ -114,7 +114,6 @@
 
 // console.log(getSum(0, -3));
 
-
 // function arrayDiff(a, b) {
 //   const arr = [];
 //   for (let i = 0; i < a.length; i++) {
@@ -142,3 +141,15 @@
 // }
 
 // arrayDiff([1, 2], [1]);
+
+// const minValue = (values) =>
+//   Number(
+//     values
+//       .reduce((acc, el) => {
+//         if (!acc.includes(el)) acc.push(el);
+//         return acc;
+//       }, [])
+//       .sort((a, b) => a - b)
+//       .join("")
+//   );
+// console.log(minValue([5, 6, 9, 9, 7, 6, 4]));
