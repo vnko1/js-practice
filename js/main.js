@@ -185,7 +185,6 @@
 
 // console.log(sortArray([5, 3, 2, 8, 1, 4]));
 
-
 // function findUniq(arr) {
 //   const obj = arr.reduce((acc, el) => {
 //     if (!acc.hasOwnProperty(el)) {
@@ -198,7 +197,6 @@
 //   return Number(Object.keys(obj).filter((el) => obj[el] === 1));
 // }
 // console.log(findUniq([1, 0, 1]));
-
 
 // function findOdd(A) {
 //   const obj = A.reduce((acc, el) => {
@@ -215,3 +213,12 @@
 // }
 
 // console.log(findOdd([1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1]));
+
+// function gimme(triplet) {
+//   const sortedArray = [...triplet].sort((a, b) => a - b);
+//   console.log(sortedArray);
+
+//   return triplet.indexOf(sortedArray[1]);
+// }
+
+// console.log(gimme([5, 10, 14]));
