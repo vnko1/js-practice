@@ -184,3 +184,17 @@
 // }
 
 // console.log(sortArray([5, 3, 2, 8, 1, 4]));
+
+
+// function findUniq(arr) {
+//   const obj = arr.reduce((acc, el) => {
+//     if (!acc.hasOwnProperty(el)) {
+//       acc[el] = 0;
+//     }
+//     acc[el] += 1;
+//     return acc;
+//   }, {});
+
+//   return Number(Object.keys(obj).filter((el) => obj[el] === 1));
+// }
+// console.log(findUniq([1, 0, 1]));
