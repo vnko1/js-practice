@@ -165,3 +165,22 @@
 // }
 
 // console.log(count('aba'));
+
+// function sortArray(array) {
+//   for (let first = 0; first < array.length; first++) {
+//     for (let second = first; second < array.length; second++) {
+//       if (
+//         (array[first] % 2 === 1 || array[first] % 2 === -1) &&
+//         (array[second] % 2 == 1 || array[second] % 2 == -1) &&
+//         array[first] > array[second]
+//       ) {
+//         const temp = array[first];
+//         array[first] = array[second];
+//         array[second] = temp;
+//       }
+//     }
+//   }
+//   return array;
+// }
+
+// console.log(sortArray([5, 3, 2, 8, 1, 4]));
