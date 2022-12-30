@@ -153,3 +153,15 @@
 //       .join("")
 //   );
 // console.log(minValue([5, 6, 9, 9, 7, 6, 4]));
+
+// function count(string) {
+//   return [...string].reduce((acc, el, index, array) => {
+//     if (!acc.hasOwnProperty(el)) {
+//       acc[el] = 0;
+//     }
+//     acc[el] += 1;
+//     return acc;
+//   }, {});
+// }
+
+// console.log(count('aba'));
