@@ -237,3 +237,15 @@
 
 //   return validator.test(username);
 // }
+
+function twoSum(numbers, target) {
+  for (let i = 0; i < numbers.length - 1; i++) {
+    for (let k = i + 1; k < numbers.length; k++) {
+      if (numbers[i] + numbers[k] === target) {
+        return [i, k];
+      }
+    }
+  }
+}
+
+console.log(twoSum([1, 2, 2, 3], 5));
