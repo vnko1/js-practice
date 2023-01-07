@@ -238,14 +238,24 @@
 //   return validator.test(username);
 // }
 
-function twoSum(numbers, target) {
-  for (let i = 0; i < numbers.length - 1; i++) {
-    for (let k = i + 1; k < numbers.length; k++) {
-      if (numbers[i] + numbers[k] === target) {
-        return [i, k];
-      }
-    }
-  }
-}
+// function twoSum(numbers, target) {
+//   for (let i = 0; i < numbers.length - 1; i++) {
+//     for (let k = i + 1; k < numbers.length; k++) {
+//       if (numbers[i] + numbers[k] === target) {
+//         return [i, k];
+//       }
+//     }
+//   }
+// }
 
-console.log(twoSum([1, 2, 2, 3], 5));
+// console.log(twoSum([1, 2, 2, 3], 5));
+
+// function solution(string) {
+//   const arr = string.split("");
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i].toUpperCase()) {
+//       arr.splice(arr.indexOf(arr[i]), 1, ` ${arr[i]}`);
+//     }
+//   }
+//   return arr.join("");
+// }
