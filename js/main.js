@@ -259,3 +259,15 @@
 //   }
 //   return arr.join("");
 // }
+
+
+function moveZeros(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+      arr.splice(arr.indexOf(arr[i]), 1);
+      arr.push(0);
+    }
+  }
+  return arr;
+}
+console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
