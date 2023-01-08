@@ -260,14 +260,33 @@
 //   return arr.join("");
 // }
 
+// function moveZeros(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 0) {
+//       arr.splice(arr.indexOf(arr[i]), 1);
+//       arr.push(0);
+//     }
+//   }
+//   return arr;
+// }
+// console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
 
-function moveZeros(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 0) {
-      arr.splice(arr.indexOf(arr[i]), 1);
-      arr.push(0);
+function duplicateCount(text) {
+  const arr = text.toLowerCase().split('');
+  const obj = arr.reduce((acc, el) => {
+    if (!acc.hasOwnProperty(el)) {
+      acc[el] = 0;
     }
-  }
-  return arr;
+    acc[el] += 1;
+    return acc;
+  }, {});
+
+  return Object.values(obj).reduce((acc, el) => {
+    if (el > 1) {
+      acc += 1;
+    }
+    return acc;
+  }, 0);
 }
-console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
+
+console.log(duplicateCount('aAAbbccde'));
