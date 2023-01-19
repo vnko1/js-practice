@@ -6,10 +6,11 @@ const galleryContainer = document.querySelector('.gallery');
 galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup(galleryItems));
 
 function galleryMarkup(galleryItems) {
-  return galleryItems
-    .map(
-      ({ preview, original, description }) =>
-        `<a class="gallery__item" href="${original}">
+  if ('loading' in HTMLImageElement.prototype) {
+    return galleryItems
+      .map(
+        ({ preview, original, description }) =>
+          `<a class="gallery__item" href="${original}">
       <img
       loading ='lazy'
         class="gallery__image"
@@ -17,8 +18,33 @@ function galleryMarkup(galleryItems) {
         alt="${description}"
       />
     </a>`,
-    )
-    .join('');
+      )
+      .join('');
+  } else {
+    scriptCreate();
+    return galleryItems
+      .map(
+        ({ preview, original, description }) =>
+          `<a class="gallery__item" href="${original}">
+      <img
+      loading ='lazy'
+        class="lazyload gallery__image"
+        data-src="${preview}"
+        alt="${description}"
+      />
+    </a>`,
+      )
+      .join('');
+  }
+}
+
+function scriptCreate() {
+  const script = document.createElement('script');
+
+  script.src =
+    'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+
+  document.body.appendChild(script);
 }
 
 new SimpleLightbox('.gallery a', {
