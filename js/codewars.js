@@ -310,27 +310,34 @@
 
 // console.log(toCamelCase('A_cat-Was-Pippi'));
 
+// function maxSum(arr, range) {
+//   const arrOfValue = [];
+//   for (const el of range) {
+//     let total = 0;
+//     for (let i = el[0]; i <= el[1]; i++) {
+//       total += arr[i];
+//     }
 
-function maxSum(arr, range) {
-  const arrOfValue = [];
-  for (const el of range) {
-    let total = 0;
-    for (let i = el[0]; i <= el[1]; i++) {
-      total += arr[i];
-    }
+//     arrOfValue.push(total);
+//   }
 
-    arrOfValue.push(total);
-  }
+//   return Math.max(...arrOfValue);
+// }
+// console.log(
+//   maxSum(
+//     [1, -2, 3, 4, -5, -4, 3, 2, 1],
+//     [
+//       [1, 3],
+//       [0, 4],
+//       [6, 8],
+//     ]
+//   )
+// );
 
-  return Math.max(...arrOfValue);
-}
-console.log(
-  maxSum(
-    [1, -2, 3, 4, -5, -4, 3, 2, 1],
-    [
-      [1, 3],
-      [0, 4],
-      [6, 8],
-    ]
-  )
-);
+// var Ghost = function () {
+//   var colors = ['white', 'yellow', 'purple', 'red'];
+//   var colorIndex = Math.floor(Math.random() * colors.length);
+//   this.color = colors[colorIndex];
+// };
+
+// теж саме що this.color = ["white", "yellow", "purple", "red"][Math.floor(Math.random() * 4)]
