@@ -271,22 +271,41 @@
 // }
 // console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
 
-function duplicateCount(text) {
-  const arr = text.toLowerCase().split('');
-  const obj = arr.reduce((acc, el) => {
-    if (!acc.hasOwnProperty(el)) {
-      acc[el] = 0;
-    }
-    acc[el] += 1;
-    return acc;
-  }, {});
+// function duplicateCount(text) {
+//   const arr = text.toLowerCase().split('');
+//   const obj = arr.reduce((acc, el) => {
+//     if (!acc.hasOwnProperty(el)) {
+//       acc[el] = 0;
+//     }
+//     acc[el] += 1;
+//     return acc;
+//   }, {});
 
-  return Object.values(obj).reduce((acc, el) => {
-    if (el > 1) {
-      acc += 1;
-    }
-    return acc;
-  }, 0);
+//   return Object.values(obj).reduce((acc, el) => {
+//     if (el > 1) {
+//       acc += 1;
+//     }
+//     return acc;
+//   }, 0);
+// }
+
+// console.log(duplicateCount('aAAbbccde'));
+
+function toCamelCase(str) {
+  if (str.length === 0) {
+    return str;
+  }
+  let normalizedStr = str;
+  if (str.includes('-')) {
+    normalizedStr = str.replaceAll('-', '_');
+  }
+
+  const arr = normalizedStr.split('_');
+  const newStr = arr.map(el => el.replace(el[0], el[0].toUpperCase())).join('');
+  if (str[0] === newStr[0].toLowerCase()) {
+    return newStr.replace(newStr[0], newStr[0].toLowerCase());
+  }
+  return newStr;
 }
 
-console.log(duplicateCount('aAAbbccde'));
+console.log(toCamelCase('A_cat-Was-Pippi'));
