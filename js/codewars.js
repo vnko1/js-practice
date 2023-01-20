@@ -291,21 +291,46 @@
 
 // console.log(duplicateCount('aAAbbccde'));
 
-function toCamelCase(str) {
-  if (str.length === 0) {
-    return str;
-  }
-  let normalizedStr = str;
-  if (str.includes('-')) {
-    normalizedStr = str.replaceAll('-', '_');
+// function toCamelCase(str) {
+//   if (str.length === 0) {
+//     return str;
+//   }
+//   let normalizedStr = str;
+//   if (str.includes('-')) {
+//     normalizedStr = str.replaceAll('-', '_');
+//   }
+
+//   const arr = normalizedStr.split('_');
+//   const newStr = arr.map(el => el.replace(el[0], el[0].toUpperCase())).join('');
+//   if (str[0] === newStr[0].toLowerCase()) {
+//     return newStr.replace(newStr[0], newStr[0].toLowerCase());
+//   }
+//   return newStr;
+// }
+
+// console.log(toCamelCase('A_cat-Was-Pippi'));
+
+
+function maxSum(arr, range) {
+  const arrOfValue = [];
+  for (const el of range) {
+    let total = 0;
+    for (let i = el[0]; i <= el[1]; i++) {
+      total += arr[i];
+    }
+
+    arrOfValue.push(total);
   }
 
-  const arr = normalizedStr.split('_');
-  const newStr = arr.map(el => el.replace(el[0], el[0].toUpperCase())).join('');
-  if (str[0] === newStr[0].toLowerCase()) {
-    return newStr.replace(newStr[0], newStr[0].toLowerCase());
-  }
-  return newStr;
+  return Math.max(...arrOfValue);
 }
-
-console.log(toCamelCase('A_cat-Was-Pippi'));
+console.log(
+  maxSum(
+    [1, -2, 3, 4, -5, -4, 3, 2, 1],
+    [
+      [1, 3],
+      [0, 4],
+      [6, 8],
+    ]
+  )
+);
