@@ -41,3 +41,21 @@
 // foo.inreaseCount();
 // console.log(foo.getCount());
 // -----------------------------------------------------
+// Пример самовызывающей функции
+
+// const counter = (() => {
+//   let count = 0;
+//   function inreaseCount() {
+//     count += 1;
+//   }
+//   function getCount() {
+//     return count;
+//   }
+
+//   return { inreaseCount, getCount };
+// })();
+
+// counter.inreaseCount();
+// counter.inreaseCount();
+// counter.inreaseCount();
+// console.log(counter.getCount());
