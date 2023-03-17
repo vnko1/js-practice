@@ -23,3 +23,21 @@
 
 // console.log(car.getCar());
 // --------------------------------------------------
+
+// function counter() {
+//   let count = 0;
+//   function inreaseCount() {
+//     count += 1;
+//   }
+//   function getCount() {
+//     return count;
+//   }
+
+//   return { inreaseCount, getCount };
+// }
+
+// const foo = counter();
+// foo.inreaseCount();
+// foo.inreaseCount();
+// console.log(foo.getCount());
+// -----------------------------------------------------
