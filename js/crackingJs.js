@@ -173,7 +173,38 @@
 // console.log(foo2);
 // foo2(2);
 // --------------------------------------------
+
+// const arr = [1, 2, 3, 4, 5];
+// const iterator = arr[Symbol.iterator]();
+// console.log(iterator);
+// console.log(iterator.next().value);
+
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
 // --------------------------------------------
+function* makeGenerator() {
+  console.log(1);
+  yield 'First action';
+  console.log(2);
+  yield 'Second action';
+  yield get();
+  function get() {
+    console.log('Hello');
+  }
+}
+
+const gen = makeGenerator();
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+// gen.next();
+// gen.next();
+
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
