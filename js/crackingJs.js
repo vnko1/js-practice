@@ -115,6 +115,27 @@
 // }.bind(this);
 // f2();
 
+// const obj = {
+//   a: 1,
+//   getcontext: () => {
+//     console.log(this);
+//   },
+// };
+
+// const obj = {
+//   a: 1,
+//   getcontext() {
+//     [(1, 2, 3)].forEach(el => {
+//       console.log(this);
+//     });
+//   },
+// };
+
+// obj.getcontext();
+// obj.getcontext();
+// [(1, 2, 3)].forEach(el => {
+//   console.log(this);
+// });
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
