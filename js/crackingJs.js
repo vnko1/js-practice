@@ -157,7 +157,21 @@
 // f1C();
 // f2C();
 // --------------------------------------------
+// const multiply = (a = 1, b = 3) => a * b;
+// const multiply5 = multiply.bind(null, 5);
+// console.log(multiply(2, 3));
+// console.log(multiply5(10));
+// console.log(multiply());
+// console.log(multiply5());
 // --------------------------------------------
+// function foo1() {
+//   return function (a) {
+//     console.log(a);
+//   };
+// }
+// const foo2 = foo1();
+// console.log(foo2);
+// foo2(2);
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
