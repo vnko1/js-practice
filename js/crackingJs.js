@@ -137,25 +137,25 @@
 //   console.log(this);
 // });
 
-const obj = {
-  a: 2,
-};
+// const obj = {
+//   a: 2,
+// };
 
-const f1 = () => {
-  console.log(this);
-};
+// const f1 = () => {
+//   console.log(this);
+// };
 
-function f2() {
-  console.log(this);
-}
+// function f2() {
+//   console.log(this);
+// }
 
-const f1C = f1.bind(obj);
-const f2C = f2.bind(obj);
+// const f1C = f1.bind(obj);
+// const f2C = f2.bind(obj);
 
-f1();
-f2();
-f1C();
-f2C();
+// f1();
+// f2();
+// f1C();
+// f2C();
 // --------------------------------------------
 // --------------------------------------------
 // --------------------------------------------
