@@ -87,5 +87,20 @@
 
 // console.log('hello'.map(item => item));
 // --------------------------------------------
+// const exampleObj = {
+//   data1: 10,
+//   cbfunc: null,
 
+//   f1(cb) {
+//     cb();
+//   },
+//   f3(cb) {
+//     this.cbfunc = cb;
+//     this.cbfunc();
+//     cb.call(this);
+//   },
+// };
+// exampleObj.f3(function () {
+//   console.log(this);
+// });
 // --------------------------------------------
