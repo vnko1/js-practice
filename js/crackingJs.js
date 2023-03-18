@@ -188,13 +188,14 @@
 // console.log(iterator.next());
 // --------------------------------------------
 function* makeGenerator() {
-  console.log(1);
+  console.log(1, get);
   yield 'First action';
   console.log(2);
-  yield 'Second action';
+  yield `Second action ${get()}`;
   yield get();
   function get() {
     console.log('Hello');
+    return 'Hello';
   }
 }
 
