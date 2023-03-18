@@ -208,16 +208,18 @@
 
 // function* makeGenerator() {
 //   console.log('start');
-//   const a = yield 1;
+//   let a = yield 1;
 //   console.log(a);
-//   const b = yield 2;
-//   console.log(b + ' world');
+//   a = yield 2;
+//   console.log(a + ' world');
 // }
 
 // const gen = makeGenerator();
 
+// console.log(gen.next());
+// console.log(gen.next('Bob'));
 // console.log(gen.next('Hello'));
-// console.log(gen.next('Hello'));
+// console.log(gen.next('Good'));
 // console.log(gen.next('Hello'));
 
 // console.log(gen.next());
