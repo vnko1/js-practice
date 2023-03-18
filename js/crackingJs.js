@@ -187,22 +187,46 @@
 // console.log(iterator.next());
 // console.log(iterator.next());
 // --------------------------------------------
+// function* makeGenerator() {
+//   console.log(1, get);
+//   yield 'First action';
+//   console.log(2);
+//   yield `Second action ${get()}`;
+//   yield get();
+//   function get() {
+//     console.log('Hello');
+//     return 'Hello';
+//   }
+// }
+
+// const gen = makeGenerator();
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// gen.next();
+// gen.next();
+
 function* makeGenerator() {
-  console.log(1, get);
-  yield 'First action';
-  console.log(2);
-  yield `Second action ${get()}`;
-  yield get();
-  function get() {
-    console.log('Hello');
-    return 'Hello';
-  }
+  console.log('start');
+  const a = yield 1;
+  console.log(a);
+  const b = yield 2;
+  console.log(b + ' world');
 }
 
 const gen = makeGenerator();
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
+
+console.log(gen.next('Hello'));
+console.log(gen.next('Hello'));
+console.log(gen.next('Hello'));
+// console.log(gen.next('Hello'));
+// console.log(gen.next('Hello'));
+
+// const gen = makeGenerator();
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// gen.next();
 // gen.next();
 // gen.next();
 
