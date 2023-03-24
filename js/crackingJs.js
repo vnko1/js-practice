@@ -289,5 +289,16 @@
 //   console.log('then', val);
 // });
 
+// function prom(mess) {
+//   return new Promise(res => {
+//     setTimeout(() => {
+//       res(mess);
+//     }, 4000);
+//   });
+// }
+
+// Promise.all([prom('1'), prom('2'), prom('3')]).then(console.log);
+
+// Promise.race([prom('1'), prom('2'), prom('3')]).then(console.log);
 // --------------------------------------------
 // --------------------------------------------
