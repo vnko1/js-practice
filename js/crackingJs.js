@@ -236,5 +236,58 @@
 //   setTimeout(() => console.log('i', i), 1000);
 // }
 // --------------------------------------------
+
+// function showBg() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log('1 is done');
+//       res('done');
+//     }, 1000);
+//   });
+// }
+
+// function slideBar() {
+//   console.log('sync 2 works');
+//   setTimeout(() => {
+//     console.log('async 2 works');
+//   }, 1000);
+// }
+
+// showBg().then(text => {
+//   console.log('text', text);
+//   slideBar();
+// });
+
+// console.log(
+//   showBg().then(text => {
+//     console.log('text', text);
+//     slideBar();
+//   }),
+// );
+// const prom = showBg();
+// console.log(
+//   prom.then(text => {
+//     console.log('text', text);
+//     slideBar();
+//   }),
+// );
+
+// function showBg(fva) {
+//   console.log(fva);
+//   return value => {
+//     return new Promise((res, rej) => {
+//       setTimeout(() => {
+//         console.log(value);
+//         res(value);
+//       }, 1000);
+//     });
+//   };
+// }
+
+// const foo = showBg('1');
+// foo('2').then(val => {
+//   console.log('then', val);
+// });
+
 // --------------------------------------------
 // --------------------------------------------
