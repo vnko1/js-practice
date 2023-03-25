@@ -23,3 +23,31 @@
 //   });
 // }
 // logNumber();
+
+// const pokeList = [
+//   'https://pokeapi.co/api/v2/pokemon/1',
+//   'https://pokeapi.co/api/v2/pokemon/2',
+//   'https://pokeapi.co/api/v2/pokemon/3',
+//   'https://pokeapi.co/api/v2/pokemon/4',
+//   'https://pokeapi.co/api/v2/pokemon/5',
+//   'https://pokeapi.co/api/v2/pokemon/6',
+//   'https://pokeapi.co/api/v2/pokemon/7',
+//   'https://pokeapi.co/api/v2/pokemon/8',
+//   'https://pokeapi.co/api/v2/pokemon/9',
+// ];
+
+// function fetchPokemon(pokemon) {
+//   return new Promise(async res => {
+//     await fetch(pokemon)
+//       .then(data => data.json())
+//       .then(pokemon => console.log(pokemon));
+//     res();
+//   });
+// }
+
+// async function logPokemon() {
+//   for (let i = 0; i < pokeList.length; i++) {
+//     await fetchPokemon(pokeList[i]);
+//   }
+// }
+// logPokemon();
