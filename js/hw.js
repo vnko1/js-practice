@@ -89,7 +89,10 @@ async function fetchPokemon(pokemon) {
 }
 
 async function logPokemon(curePokeIt) {
-  if (curePokeIt.done) return;
+  if (curePokeIt.done) {
+    console.log('done!!');
+    return;
+  }
   const poke = await fetchPokemon(curePokeIt.value);
   console.log(poke);
   logPokemon(iterator.next());
