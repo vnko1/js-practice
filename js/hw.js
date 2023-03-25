@@ -24,6 +24,7 @@
 // }
 // logNumber();
 
+// ==============================================
 // const pokeList = [
 //   'https://pokeapi.co/api/v2/pokemon/1',
 //   'https://pokeapi.co/api/v2/pokemon/2',
@@ -51,6 +52,11 @@
 //       .then(data => data.json())
 //       .then(pokemon => res(pokemon));
 //   });
+// }
+
+// async function fetchPokemon(pokemon) {
+//   const pokeData = await fetch(pokemon);
+//   return pokeData.json();
 // }
 
 // async function logPokemon() {
