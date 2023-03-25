@@ -24,17 +24,17 @@
 // }
 // logNumber();
 
-const pokeList = [
-  'https://pokeapi.co/api/v2/pokemon/1',
-  'https://pokeapi.co/api/v2/pokemon/2',
-  'https://pokeapi.co/api/v2/pokemon/3',
-  'https://pokeapi.co/api/v2/pokemon/4',
-  'https://pokeapi.co/api/v2/pokemon/5',
-  'https://pokeapi.co/api/v2/pokemon/6',
-  'https://pokeapi.co/api/v2/pokemon/7',
-  'https://pokeapi.co/api/v2/pokemon/8',
-  'https://pokeapi.co/api/v2/pokemon/9',
-];
+// const pokeList = [
+//   'https://pokeapi.co/api/v2/pokemon/1',
+//   'https://pokeapi.co/api/v2/pokemon/2',
+//   'https://pokeapi.co/api/v2/pokemon/3',
+//   'https://pokeapi.co/api/v2/pokemon/4',
+//   'https://pokeapi.co/api/v2/pokemon/5',
+//   'https://pokeapi.co/api/v2/pokemon/6',
+//   'https://pokeapi.co/api/v2/pokemon/7',
+//   'https://pokeapi.co/api/v2/pokemon/8',
+//   'https://pokeapi.co/api/v2/pokemon/9',
+// ];
 
 // function fetchPokemon(pokemon) {
 //   return new Promise(async res => {
