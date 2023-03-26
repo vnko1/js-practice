@@ -99,3 +99,37 @@
 // }
 
 // logPokemon(iterator.next());
+
+// ======================================
+// const pokeList = [
+//   'https://pokeapi.co/api/v2/pokemon/1',
+//   'https://pokeapi.co/api/v2/pokemon/2',
+//   'https://pokeapi.co/api/v2/pokemon/3',
+//   'https://pokeapi.co/api/v2/pokemon/4',
+//   'https://pokeapi.co/api/v2/pokemon/5',
+//   'https://pokeapi.co/api/v2/pokemon/6',
+//   'https://pokeapi.co/api/v2/pokemon/7',
+//   'https://pokeapi.co/api/v2/pokemon/8',
+//   'https://pokeapi.co/api/v2/pokemon/9',
+// ];
+
+// const newPokemonList = [...pokeList];
+
+// async function fetchPokemon(pokemon) {
+//   const data = await fetch(pokemon);
+//   return data.json();
+// }
+
+// async function getPokemon() {
+//   if (!newPokemonList.length) {
+//     console.log('done');
+//     return;
+//   }
+//   const sliced = newPokemonList.splice(0, 3);
+//   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
+//   console.log(pokeData);
+
+//   getPokemon();
+// }
+// getPokemon();
+// =====================================================
