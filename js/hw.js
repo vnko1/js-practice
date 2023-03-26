@@ -111,6 +111,7 @@
 //   'https://pokeapi.co/api/v2/pokemon/7',
 //   'https://pokeapi.co/api/v2/pokemon/8',
 //   'https://pokeapi.co/api/v2/pokemon/9',
+//   'https://pokeapi.co/api/v2/pokemon/10',
 // ];
 
 // const newPokemonList = [...pokeList];
@@ -126,7 +127,7 @@
 //     return;
 //   }
 //   const sliced = newPokemonList.splice(0, 3);
-//   console.log(newPokemonList);
+
 //   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
 //   console.log(pokeData);
 
