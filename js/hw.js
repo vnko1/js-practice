@@ -126,6 +126,7 @@
 //     return;
 //   }
 //   const sliced = newPokemonList.splice(0, 3);
+//   console.log(newPokemonList);
 //   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
 //   console.log(pokeData);
 
