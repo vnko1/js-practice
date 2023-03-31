@@ -135,6 +135,7 @@
 // }
 // getPokemon();
 // =====================================================
+
 const pokeList = [
   'https://pokeapi.co/api/v2/pokemon/1',
   'https://pokeapi.co/api/v2/pokemon/2',
@@ -165,19 +166,21 @@ async function getPokemon() {
   const sliced = newPokemonList.splice(0, 3);
 
   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
+  const list = pokeData.map(el => showPokemon(el));
 
-  showPokemon(pokeData);
+  await Promise.all(list);
   getPokemon();
 }
 
 function showPokemon(data) {
-  const markUp = data
-    .map(pokemon => {
-      return `<div><p>${pokemon.name}</p><img onload src=${pokemon.sprites.back_default} alt='pokemon'/></div>`;
-    })
-    .join('');
-
-  pokemonListEl.insertAdjacentHTML('beforeend', markUp);
+  return new Promise((res, rej) => {
+    const body = document.querySelector('body');
+    const image = document.createElement('img');
+    image.src = data.sprites.back_default;
+    image.onload = res;
+    image.onerror = rej;
+    body.appendChild(image);
+  });
 }
 
 getPokemon();
