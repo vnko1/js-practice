@@ -153,6 +153,17 @@ const pokemonListEl = document.querySelector('.poke-list');
 
 const newPokemonList = [...pokeList];
 
+function showPokemon(data) {
+  return new Promise((res, rej) => {
+    const body = document.querySelector('body');
+    const image = document.createElement('img');
+    image.src = data.sprites.back_default;
+    image.onload = res;
+    image.onerror = rej;
+    body.appendChild(image);
+  });
+}
+
 async function fetchPokemon(pokemon) {
   const data = await fetch(pokemon);
   return data.json();
@@ -170,17 +181,6 @@ async function getPokemon() {
 
   await Promise.all(list);
   getPokemon();
-}
-
-function showPokemon(data) {
-  return new Promise((res, rej) => {
-    const body = document.querySelector('body');
-    const image = document.createElement('img');
-    image.src = data.sprites.back_default;
-    image.onload = res;
-    image.onerror = rej;
-    body.appendChild(image);
-  });
 }
 
 getPokemon();
