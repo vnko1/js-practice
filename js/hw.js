@@ -165,17 +165,20 @@ async function getPokemon() {
   const sliced = newPokemonList.splice(0, 3);
 
   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
-  console.log(pokeData);
-  const markUp = pokeData
+
+  showPokemon(pokeData);
+  getPokemon();
+}
+
+function showPokemon(data) {
+  const markUp = data
     .map(pokemon => {
-      console.log(pokemon.sprites.back_default);
       return `<div><p>${pokemon.name}</p><img onload src=${pokemon.sprites.back_default} alt='pokemon'/></div>`;
     })
     .join('');
 
   pokemonListEl.insertAdjacentHTML('beforeend', markUp);
-
-  getPokemon();
 }
+
 getPokemon();
 // ===================================================================
