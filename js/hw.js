@@ -136,54 +136,54 @@
 // getPokemon();
 // =====================================================
 
-const pokeList = [
-  'https://pokeapi.co/api/v2/pokemon/1',
-  'https://pokeapi.co/api/v2/pokemon/2',
-  'https://pokeapi.co/api/v2/pokemon/3',
-  'https://pokeapi.co/api/v2/pokemon/4',
-  'https://pokeapi.co/api/v2/pokemon/5',
-  'https://pokeapi.co/api/v2/pokemon/6',
-  'https://pokeapi.co/api/v2/pokemon/7',
-  'https://pokeapi.co/api/v2/pokemon/8',
-  'https://pokeapi.co/api/v2/pokemon/9',
-  'https://pokeapi.co/api/v2/pokemon/10',
-];
+// const pokeList = [
+//   'https://pokeapi.co/api/v2/pokemon/1',
+//   'https://pokeapi.co/api/v2/pokemon/2',
+//   'https://pokeapi.co/api/v2/pokemon/3',
+//   'https://pokeapi.co/api/v2/pokemon/4',
+//   'https://pokeapi.co/api/v2/pokemon/5',
+//   'https://pokeapi.co/api/v2/pokemon/6',
+//   'https://pokeapi.co/api/v2/pokemon/7',
+//   'https://pokeapi.co/api/v2/pokemon/8',
+//   'https://pokeapi.co/api/v2/pokemon/9',
+//   'https://pokeapi.co/api/v2/pokemon/10',
+// ];
 
-const pokemonListEl = document.querySelector('.poke-list');
+// const pokemonListEl = document.querySelector('.poke-list');
 
-const newPokemonList = [...pokeList];
+// const newPokemonList = [...pokeList];
 
-function showPokemon(data) {
-  return new Promise((res, rej) => {
-    const body = document.querySelector('body');
-    const image = document.createElement('img');
-    image.src = data.sprites.back_default;
-    // document.addEventListener('load', res);
-    // document.addEventListener('error', rej);
-    image.onload = res;
-    image.onerror = rej;
-    body.appendChild(image);
-  });
-}
+// function showPokemon(data) {
+//   return new Promise((res, rej) => {
+//     const body = document.querySelector('body');
+//     const image = document.createElement('img');
+//     image.src = data.sprites.back_default;
+//     // document.addEventListener('load', res);
+//     // document.addEventListener('error', rej);
+//     image.onload = res;
+//     image.onerror = rej;
+//     body.appendChild(image);
+//   });
+// }
 
-async function fetchPokemon(pokemon) {
-  const data = await fetch(pokemon);
-  return data.json();
-}
+// async function fetchPokemon(pokemon) {
+//   const data = await fetch(pokemon);
+//   return data.json();
+// }
 
-async function getPokemon() {
-  if (!newPokemonList.length) {
-    console.log('done');
-    return;
-  }
-  const sliced = newPokemonList.splice(0, 3);
+// async function getPokemon() {
+//   if (!newPokemonList.length) {
+//     console.log('done');
+//     return;
+//   }
+//   const sliced = newPokemonList.splice(0, 3);
 
-  const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
-  const list = pokeData.map(el => showPokemon(el));
+//   const pokeData = await Promise.all(sliced.map(el => fetchPokemon(el)));
+//   const list = pokeData.map(el => showPokemon(el));
 
-  await Promise.all(list);
-  getPokemon();
-}
+//   await Promise.all(list);
+//   getPokemon();
+// }
 
-getPokemon();
+// getPokemon();
 // ===================================================================
