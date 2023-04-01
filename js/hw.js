@@ -158,6 +158,8 @@ function showPokemon(data) {
     const body = document.querySelector('body');
     const image = document.createElement('img');
     image.src = data.sprites.back_default;
+    // document.addEventListener('load', res);
+    // document.addEventListener('error', rej);
     image.onload = res;
     image.onerror = rej;
     body.appendChild(image);
