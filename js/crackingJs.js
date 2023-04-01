@@ -362,3 +362,28 @@
 // gallery.mount();
 
 // --------------------------------------------
+
+// const prom = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res('ok');
+//   }, 0);
+// });
+// prom.then(console.log);
+
+// const promis = () => {
+//   return new Promise((res, rej) => {
+//     res('hi');
+//   });
+// };
+
+// promis().then(console.log);
+
+// const promis = new Promise((res, rej) => {
+//   res('hi');
+// });
+
+// promis.then(console.log);
+// new Promise((res, rej) => {
+//   res('hi');
+// }).then(console.log);
+// ==================================================================
