@@ -149,8 +149,6 @@
 //   'https://pokeapi.co/api/v2/pokemon/10',
 // ];
 
-// // const pokemonListEl = document.querySelector('.poke-list');
-
 // const newPokemonList = [...pokeList];
 
 // function showPokemon(data) {
