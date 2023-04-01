@@ -318,19 +318,47 @@
 // const gallery1 = gallery();
 // gallery1.mount();
 
-const gallery = (function () {
-  const state = {};
-  const mount = () => {
-    console.log('object');
-  };
-  const nextSlide = () => {};
-  const prevSlide = () => {};
-  const toFirstSlide = () => {};
-  const unmount = () => {};
+// const gallery = (function () {
+//   const state = {
+//     node: null,
+//     images: [],
+//     settings: {},
+//     currentSlide: 1,
+//   };
 
-  return { state, mount, nextSlide, prevSlide, toFirstSlide, unmount };
-})();
+//   const goToSlide = () => {};
 
-gallery.mount();
+//   const mount = (node, images, settings) => {
+//     state.node = node;
+//     state.images = images;
+//     state.settings = { ...state.settings, ...settings };
+//   };
+
+//   const nextSlide = () => {
+//     const nextSlide = state.currentSlide + 1;
+//     goToSlide(nextSlide);
+//     state.currentSlide = nextSlide;
+//   };
+
+//   const prevSlide = () => {
+//     const prevSlide = state.currentSlide - 1;
+//     goToSlide(prevSlide);
+//     state.currentSlide = prevSlide;
+//   };
+
+//   const toFirstSlide = () => {
+//     const firstSlide = 1;
+//     goToSlide(firstSlide);
+//     state.currentSlide = firstSlide;
+//   };
+
+//   const unmount = () => {
+//     state.node.parentElement.removeChild(state.node);
+//   };
+
+//   return { state, mount, nextSlide, prevSlide, toFirstSlide, unmount };
+// })();
+
+// gallery.mount();
 
 // --------------------------------------------
