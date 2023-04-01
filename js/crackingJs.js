@@ -301,4 +301,36 @@
 
 // Promise.race([prom('1'), prom('2'), prom('3')]).then(console.log);
 // --------------------------------------------
+// const gallery = function () {
+//   const state = {};
+//   const mount = () => {
+//     console.log('object');
+//   };
+//   const nextSlide = () => {};
+//   const prevSlide = () => {};
+//   const toFirstSlide = () => {};
+//   const unmount = () => {};
+
+//   return { state, mount, nextSlide, prevSlide, toFirstSlide, unmount };
+// };
+
+// gallery().mount();
+// const gallery1 = gallery();
+// gallery1.mount();
+
+const gallery = (function () {
+  const state = {};
+  const mount = () => {
+    console.log('object');
+  };
+  const nextSlide = () => {};
+  const prevSlide = () => {};
+  const toFirstSlide = () => {};
+  const unmount = () => {};
+
+  return { state, mount, nextSlide, prevSlide, toFirstSlide, unmount };
+})();
+
+gallery.mount();
+
 // --------------------------------------------
