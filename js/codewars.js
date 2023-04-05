@@ -380,38 +380,46 @@
 //   }
 // }
 
+// class DataSet {
+//   constructor(...data) {
+//     this.data = data;
+//     this.mean = this.setMean();
 
+//     this.variance = this.setVar();
 
-class DataSet {
-  constructor(...data) {
-    this.data = data;
-    this.mean = this.setMean();
+//     this.stdDeviation = Math.sqrt(this.variance);
+//   }
 
-    this.variance = this.setVar();
+//   setMean() {
+//     const means =
+//       this.data.reduce((acc, el) => {
+//         acc += el;
+//         return acc;
+//       }, 0) / this.data.length;
 
-    this.stdDeviation = Math.sqrt(this.variance);
-  }
+//     this.mean = means;
+//     return this.mean;
+//   }
 
-  setMean() {
-    const means =
-      this.data.reduce((acc, el) => {
-        acc += el;
-        return acc;
-      }, 0) / this.data.length;
+//   setVar() {
+//     this.variance =
+//       this.data
+//         .map((v) => Math.pow(v - this.mean, 2))
+//         .reduce((a, b) => a + b, 0) / this.data.length;
+//     this.stdDeviation = Math.sqrt(this.variance);
+//     return this.variance;
+//   }
+// }
+// var myData1 = new DataSet(1, 2, 3, 4, 5, 6, 7);
+// console.log(myData1.setMean());
+// console.log(myData1);
 
-    this.mean = means;
-    return this.mean;
-  }
+// function foo() {
+//   console.log(1);
+//   return function foo1() {
+//     console.log(2);
+//   };
+// }
 
-  setVar() {
-    this.variance =
-      this.data
-        .map((v) => Math.pow(v - this.mean, 2))
-        .reduce((a, b) => a + b, 0) / this.data.length;
-    this.stdDeviation = Math.sqrt(this.variance);
-    return this.variance;
-  }
-}
-var myData1 = new DataSet(1, 2, 3, 4, 5, 6, 7);
-console.log(myData1.setMean());
-console.log(myData1);
+// const a = foo();
+// a();
