@@ -413,15 +413,3 @@
 // var myData1 = new DataSet(1, 2, 3, 4, 5, 6, 7);
 // console.log(myData1.setMean());
 // console.log(myData1);
-
-// function foo(value) {
-//   let a = value;
-//   console.log(a);
-//   return function foo1(value) {
-//     a = value;
-//     console.log(a);
-//   };
-// }
-
-// const a = foo(1);
-// a(2);
