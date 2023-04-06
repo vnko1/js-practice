@@ -25,4 +25,8 @@
 // foo();
 // goo();
 
-const a = 'Hello';
+// const a = 'Hello';
+
+// const b = 'world';
+// console.log(a + b);
+// console.log(!!(+'123' + 'b'));
