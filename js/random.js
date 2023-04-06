@@ -30,3 +30,10 @@
 // const b = 'world';
 // console.log(a + b);
 // console.log(!!(+'123' + 'b'));
+
+// const age = 41;
+// const otherAge = 40;
+// const value =
+//   age < 45 ? (age < otherAge ? 'is older' : 'is nos so older') : 'is younger';
+
+// console.log(value);
