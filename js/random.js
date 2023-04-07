@@ -58,7 +58,7 @@
 // }
 
 // foo();
-
+// ======================Carrying====================
 // function multiply(a, b) {
 //   return a * b;
 // }
@@ -85,6 +85,7 @@
 
 // console.log(multiply6(6));
 
+// ======================Decorator====================
 // function saveUser(user) {
 //   console.log('User saved: ', user.name);
 // }
