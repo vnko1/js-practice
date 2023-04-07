@@ -84,3 +84,39 @@
 // }
 
 // console.log(multiply6(6));
+
+function saveUser(user) {
+  console.log('User saved: ', user.name);
+}
+
+function checkPermissionDecorator(cb) {
+  return user => {
+    if (user.isAdult()) {
+      cb(user);
+      return;
+    }
+    console.log('User not saved: ', user.name);
+  };
+}
+
+const user1 = {
+  name: 'Bob',
+  age: 20,
+  isAdult: function () {
+    return this.age >= 18;
+  },
+};
+
+const user2 = {
+  name: 'John',
+  age: 17,
+  isAdult: function () {
+    return this.age >= 18;
+  },
+};
+
+const addUser = checkPermissionDecorator(saveUser);
+
+addUser(user1);
+addUser(user2);
+// console.log(user2.isAdult());
