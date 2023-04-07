@@ -58,3 +58,29 @@
 // }
 
 // foo();
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+
+// function multiply2(b) {
+//   return multiply(2, b);
+// }
+
+// console.log(multiply2(2));
+
+// const multiply3 = multiply.bind(null, 3, 10);
+
+// console.log(multiply3());
+
+// const multiply4 = multiply.bind(null, 4);
+
+// console.log(multiply4(5));
+
+// const multiply5 = multiply.call(null, 5, 10);
+
+// function multiply6(a) {
+//   return multiply.call(null, 6, a);
+// }
+
+// console.log(multiply6(6));
