@@ -37,3 +37,24 @@
 //   age < 45 ? (age < otherAge ? 'is older' : 'is nos so older') : 'is younger';
 
 // console.log(value);
+
+// function foo() {
+//   const name = 'Bob';
+
+//   function noo() {
+//     const name = 'John';
+//     too();
+//   }
+
+//   function too() {
+//     console.log(name);
+//     console.log(this);
+//     function boo() {
+//       console.log(this);
+//     }
+//     boo();
+//   }
+//   noo();
+// }
+
+// foo();
