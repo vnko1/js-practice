@@ -122,7 +122,7 @@
 // addUser(user2);
 // console.log(user2.isAdult());
 
-const user = {};
+// const user = {};
 
 // Object.defineProperty(user, 'name', {
 //   //   enumerable: true,
