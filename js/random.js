@@ -121,3 +121,38 @@
 // addUser(user1);
 // addUser(user2);
 // console.log(user2.isAdult());
+
+const user = {};
+
+// Object.defineProperty(user, 'name', {
+//   //   enumerable: true,
+//   //   writable: true,
+//   //   configurable: true,
+//   //   value: 'Bob Dylan',
+//   set(value) {
+//     this.fullName = value;
+//     const name = value.split(' ');
+//     this.firstName = name[0];
+//     this.lastName = name[1];
+//   },
+// });
+
+// Object.defineProperties(user, {
+//   name: {
+//     enumerable: true,
+//     writable: true,
+//     configurable: true,
+//     value: 'Bob',
+//   },
+//   lastName: {
+//     enumerable: true,
+//     writable: true,
+//     configurable: true,
+//     value: 'Dylan',
+//   },
+// });
+
+// user.name = 'Bob Dylan';
+// console.log(user);
+// delete user.name;
+// console.log(user);
