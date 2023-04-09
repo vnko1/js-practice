@@ -159,3 +159,7 @@ const user = {};
 // console.log(user.name);
 // delete user.name;
 // console.log(user);
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const iter = arr.entries();
+// console.log(iter.next().value);
