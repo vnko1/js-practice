@@ -1,19 +1,29 @@
+// {
+//   a = 2;
+// }
 // console.log(a);
 
-var f = function () {
-  console.log(1);
-};
+// console.log(d);
 
-var execute = function (f) {
-  setTimeout(f, 1000);
-};
+// d = 2;
 
-f = function () {
-  console.log(2);
-};
+// var b;
+// console.log(b);
+
+// b = 2;
+// console.log(b);
+
+// var f = function () {
+//   console.log(1);
+// };
+
+// var execute = function (f) {
+//   debugger;
+//   setTimeout(f, 1000);
+// };
 
 // execute(f); // что выведет в консоль и почему
 
-console.log(d);
-
-d = 2;
+// f = function () {
+//   console.log(2);
+// };
