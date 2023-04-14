@@ -27,3 +27,16 @@
 // f = function () {
 //   console.log(2);
 // };
+
+// console.log(a) ;
+// console.log(b);
+// let a = 1;
+// var b = 2;
+// console.log(a);
+
+// {
+//   var c = 0;
+//   let b = 1;
+// }
+// console.log(c);
+// console.log(b);
