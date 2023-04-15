@@ -40,3 +40,15 @@
 // }
 // console.log(c);
 // console.log(b);
+
+// const arr = [];
+// function foo(x) {
+//   if (x === 5) return x;
+//     arr.push(x);
+//     console.log(foo(x + 1));
+//   return x + foo(x + 1);
+// }
+// console.log(foo(1));
+// console.log(arr);
+
+// 1 = 1 + (1+1)
